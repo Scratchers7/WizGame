@@ -18,7 +18,7 @@ sources/0 = SubResource("TileSetAtlasSource_wrm1d")
 position = Vector2(0, -4)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=244886646]
-zoom = Vector2(13.62, 13.62)
+zoom = Vector2(4.85, 4.85)
 position_smoothing_enabled = true
 
 [node name="TileMap" type="TileMap" parent="." unique_id=151375656]
