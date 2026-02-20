@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cdco26nh76bde"]
 
+[ext_resource type="Script" uid="uid://cwf6pi40cfjiq" path="res://Scripts/bullet.gd" id="1_oduel"]
 [ext_resource type="Texture2D" uid="uid://bacmey4wcgsp6" path="res://Assets/Bullet.png" id="1_xjght"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oduel"]
@@ -7,6 +8,7 @@ radius = 1.0
 height = 5.0
 
 [node name="Bullet" type="Area2D" unique_id=1122412025]
+script = ExtResource("1_oduel")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=938341478]
 position = Vector2(0, -0.5)

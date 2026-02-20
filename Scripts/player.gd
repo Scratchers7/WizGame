@@ -4,6 +4,13 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
+var Bullet = preload("res://Scenes/bullet.tscn")
+
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("ui_accept"):
+		var b = Bullet.instantiate()
+		get_tree().root.add_child(b)
+		b.global_transform = $Marker2D.global_transform
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
