@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://cktylhuaawwmu"]
+
+[ext_resource type="Texture2D" uid="uid://cbi7wcwk2uojt" path="res://Assets/Sigils.png" id="1_23t8e"]
+[ext_resource type="Script" uid="uid://dvd5u2xgy7qru" path="res://Scripts/draggable.gd" id="1_tdygm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ajbp"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tdygm"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(15.3, 15.3, 15.3, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ff7nk"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.007843138, 0.007843138, 0.007843138, 1)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tdygm"]
+
+[node name="Draggable" type="Node2D" unique_id=2086833474]
+script = ExtResource("1_tdygm")
+
+[node name="Button" type="Button" parent="." unique_id=1066670933]
+z_index = 1
+offset_left = -9.0
+offset_top = -9.0
+offset_right = 9.0
+offset_bottom = 10.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_2ajbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tdygm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ff7nk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=466637095]
+z_index = 1
+texture = ExtResource("1_23t8e")
+hframes = 3
+vframes = 3
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1665382277]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1235035642]
+shape = SubResource("CircleShape2D_tdygm")
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

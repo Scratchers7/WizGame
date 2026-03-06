@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dmg4k0nsokrsn"]
+
+[ext_resource type="Script" uid="uid://dvqcftsvb0fjl" path="res://Scripts/snap_place.gd" id="1_xqa58"]
+[ext_resource type="Texture2D" uid="uid://db4w2qyuu8d28" path="res://Assets/SocketSelect.png" id="2_bri36"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2xge8"]
+
+[node name="SnapPlace" type="Area2D" unique_id=737486396 groups=["sockets"]]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource("1_xqa58")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=702504160]
+shape = SubResource("CircleShape2D_2xge8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=160301119]
+visible = false
+texture = ExtResource("2_bri36")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

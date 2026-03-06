@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://mrw34i3ff2a1"]
+
+[ext_resource type="Texture2D" uid="uid://eimw7pvktevy" path="res://Assets/SpellCircle.png" id="1_ntrn6"]
+[ext_resource type="PackedScene" uid="uid://dmg4k0nsokrsn" path="res://Scenes/snap_place.tscn" id="2_870tk"]
+
+[node name="SpellMenu" type="Node2D" unique_id=208818478]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1071898027]
+texture = ExtResource("1_ntrn6")
+offset = Vector2(0.5, -0.5)
+
+[node name="SnapPlace" parent="." unique_id=737486396 instance=ExtResource("2_870tk")]
+position = Vector2(-27, 16)
+
+[node name="SnapPlace2" parent="." unique_id=405470179 instance=ExtResource("2_870tk")]
+
+[node name="SnapPlace3" parent="." unique_id=374803120 instance=ExtResource("2_870tk")]
+position = Vector2(0, -30)
+
+[node name="SnapPlace4" parent="." unique_id=746064743 instance=ExtResource("2_870tk")]
+position = Vector2(27, -16)
+
+[node name="SnapPlace5" parent="." unique_id=801927451 instance=ExtResource("2_870tk")]
+position = Vector2(-27, -16)
+
+[node name="SnapPlace6" parent="." unique_id=1866247882 instance=ExtResource("2_870tk")]
+position = Vector2(27, 16)
+
+[node name="SnapPlace7" parent="." unique_id=1907815493 instance=ExtResource("2_870tk")]
+position = Vector2(0, 29)
