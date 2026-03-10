@@ -2,10 +2,18 @@
 
 [ext_resource type="Texture2D" uid="uid://eimw7pvktevy" path="res://Assets/SpellCircle.png" id="1_ntrn6"]
 [ext_resource type="PackedScene" uid="uid://dmg4k0nsokrsn" path="res://Scenes/snap_place.tscn" id="2_870tk"]
+[ext_resource type="Texture2D" uid="uid://dr72b0j4mikwd" path="res://Assets/Signe&Sigil_Selection.png" id="3_15sst"]
+[ext_resource type="Shader" uid="uid://dfsuw83d0x5rm" path="res://Scenes/spell_menu.gdshader" id="3_ls74s"]
+[ext_resource type="Texture2D" uid="uid://c0s7vv5tavx60" path="res://Assets/SpellSheetMask.png" id="4_5m44h"]
+[ext_resource type="PackedScene" uid="uid://chs1kdi8iv88u" path="res://Scenes/draggable_spawner.tscn" id="6_eui55"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eui55"]
+shader = ExtResource("3_ls74s")
 
 [node name="SpellMenu" type="Node2D" unique_id=208818478]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1071898027]
+material = SubResource("ShaderMaterial_eui55")
 texture = ExtResource("1_ntrn6")
 offset = Vector2(0.5, -0.5)
 
@@ -28,3 +36,83 @@ position = Vector2(27, 16)
 
 [node name="SnapPlace7" parent="." unique_id=1907815493 instance=ExtResource("2_870tk")]
 position = Vector2(0, 29)
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=475807418]
+position = Vector2(-89, 2)
+texture = ExtResource("4_5m44h")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D3" unique_id=447273478]
+position = Vector2(-1, -2)
+texture = ExtResource("3_15sst")
+
+[node name="DraggableSpawner" parent="." unique_id=204731691 instance=ExtResource("6_eui55")]
+position = Vector2(-111, -70)
+
+[node name="DraggableSpawner2" parent="." unique_id=1938419103 instance=ExtResource("6_eui55")]
+position = Vector2(-90, -70)
+
+[node name="DraggableSpawner3" parent="." unique_id=742349157 instance=ExtResource("6_eui55")]
+position = Vector2(-69, -70)
+
+[node name="DraggableSpawner4" parent="." unique_id=815224878 instance=ExtResource("6_eui55")]
+position = Vector2(-111, -50)
+
+[node name="DraggableSpawner5" parent="." unique_id=1574273418 instance=ExtResource("6_eui55")]
+position = Vector2(-90, -50)
+
+[node name="DraggableSpawner6" parent="." unique_id=2108520569 instance=ExtResource("6_eui55")]
+position = Vector2(-69, -50)
+
+[node name="DraggableSpawner7" parent="." unique_id=1684783312 instance=ExtResource("6_eui55")]
+position = Vector2(-111, -30)
+
+[node name="DraggableSpawner8" parent="." unique_id=1998302984 instance=ExtResource("6_eui55")]
+position = Vector2(-90, -30)
+
+[node name="DraggableSpawner9" parent="." unique_id=1146871053 instance=ExtResource("6_eui55")]
+position = Vector2(-69, -30)
+
+[node name="DraggableSpawner10" parent="." unique_id=217908921 instance=ExtResource("6_eui55")]
+position = Vector2(-111, -10)
+
+[node name="DraggableSpawner11" parent="." unique_id=2039512167 instance=ExtResource("6_eui55")]
+position = Vector2(-90, -10)
+
+[node name="DraggableSpawner12" parent="." unique_id=2104168813 instance=ExtResource("6_eui55")]
+position = Vector2(-69, -10)
+
+[node name="DraggableSpawner13" parent="." unique_id=1686172497 instance=ExtResource("6_eui55")]
+position = Vector2(-111, 10)
+
+[node name="DraggableSpawner14" parent="." unique_id=1774812043 instance=ExtResource("6_eui55")]
+position = Vector2(-90, 10)
+
+[node name="DraggableSpawner15" parent="." unique_id=1351615514 instance=ExtResource("6_eui55")]
+position = Vector2(-69, 10)
+
+[node name="DraggableSpawner16" parent="." unique_id=350187098 instance=ExtResource("6_eui55")]
+position = Vector2(-111, 30)
+
+[node name="DraggableSpawner17" parent="." unique_id=363599277 instance=ExtResource("6_eui55")]
+position = Vector2(-90, 30)
+
+[node name="DraggableSpawner18" parent="." unique_id=116437154 instance=ExtResource("6_eui55")]
+position = Vector2(-69, 30)
+
+[node name="DraggableSpawner19" parent="." unique_id=1376978041 instance=ExtResource("6_eui55")]
+position = Vector2(-111, 50)
+
+[node name="DraggableSpawner20" parent="." unique_id=175565146 instance=ExtResource("6_eui55")]
+position = Vector2(-90, 50)
+
+[node name="DraggableSpawner21" parent="." unique_id=1076162508 instance=ExtResource("6_eui55")]
+position = Vector2(-69, 50)
+
+[node name="DraggableSpawner22" parent="." unique_id=156460936 instance=ExtResource("6_eui55")]
+position = Vector2(-111, 70)
+
+[node name="DraggableSpawner23" parent="." unique_id=92591993 instance=ExtResource("6_eui55")]
+position = Vector2(-90, 70)
+
+[node name="DraggableSpawner24" parent="." unique_id=977566737 instance=ExtResource("6_eui55")]
+position = Vector2(-69, 70)

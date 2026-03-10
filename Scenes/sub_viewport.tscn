@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://hnmkgbl3tdgk"]
+
+[ext_resource type="Texture2D" uid="uid://tu5cj8xv7320" path="res://Assets/Signe&Sigil_SelectionMask.png" id="1_rdwol"]
+
+[node name="SubViewport" type="SubViewport" unique_id=1138526885]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1556024290]
+texture = ExtResource("1_rdwol")
